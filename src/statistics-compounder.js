@@ -12,6 +12,16 @@ class Statistics {
         this.desktopP = desktopP
         this.error = error
     }
+
+    toString() {
+        let icon = '✅'
+
+        if (this.mobileP < 90 || this.desktopP < 90) {
+            icon = '❌'
+        }
+
+        return `${icon} ${this.url} Perfomance: m${this.mobileP}/d${this.desktopP}`
+    }
 }
 
 class StatisticsCompounder {

@@ -1,3 +1,4 @@
 .env
 results.json
 tmp
+node_modules

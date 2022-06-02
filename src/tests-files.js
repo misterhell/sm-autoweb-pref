@@ -1,7 +1,7 @@
 const fs = require('fs')
 const { Landing } = require("./landings-loader");
 
-const PARSING_RESULT_TIMES = 1;
+const PARSING_RESULT_TIMES = 3;
 
 
 class TestsFiles {
@@ -26,7 +26,8 @@ class TestsFiles {
                             "gatherer": "psi",
                             "psi": {
                               "settings": {
-                                "strategy": file.indexOf('desktop') !== -1 ? "desktop" : "mobile"
+                                "strategy": file.indexOf('desktop') !== -1 ? "desktop" : "mobile",
+                                "category": "performance"
                               }
                             }
                           }

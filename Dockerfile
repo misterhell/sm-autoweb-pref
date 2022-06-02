@@ -1,10 +1,13 @@
-FROM 18-alpine
+FROM node:18-alpine
 
+RUN apk add --no-cache git
+WORKDIR /app
+COPY . .
 
-COPY .
+RUN npm install
 
 RUN git submodule update --init --recursive
-RUN cd ./AutoWebPerf && npm imstall
+RUN cd ./AutoWebPerf && npm install
 
 
-CMD ""
+CMD ["node", "./index.js"]

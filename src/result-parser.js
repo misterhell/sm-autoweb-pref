@@ -47,7 +47,7 @@ class ResultParser {
 
                 if (el.errors.length > 0) {
                     // adding first error
-                    accumulator[el.label].addError(el.errors.pop())
+                    accumulator[el.label].errors.push(el.errors.pop())
                     return;
                 }
 

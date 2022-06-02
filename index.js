@@ -77,7 +77,7 @@ exec(cmds, (error, stdout, stderr) => {
     stat.sort((a, b) => a.desktopP >= b.desktopP ? 1 : -1)
 
     // creating full message
-    let msg = '';
+    let msg = `Perfomance ${(new Date).toISOString().slice(0,10)}: \n`;
     stat.forEach(s => {
         msg += `\n${s}`
     })

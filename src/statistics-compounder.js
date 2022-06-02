@@ -20,7 +20,7 @@ class Statistics {
             icon = '❌'
         }
 
-        return `${icon} ${this.url} Perfomance: m${this.mobileP}/d${this.desktopP}`
+        return `${icon} ${this.url}: m${this.mobileP}/d${this.desktopP}`
     }
 }
 

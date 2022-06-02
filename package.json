@@ -1,0 +1,23 @@
+{
+  "name": "sm-auto-web-pref",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterhell/sm-autoweb-pref.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misterhell/sm-autoweb-pref/issues"
+  },
+  "homepage": "https://github.com/misterhell/sm-autoweb-pref#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

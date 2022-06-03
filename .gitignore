@@ -2,3 +2,6 @@
 results.json
 tmp
 node_modules
+
+!/**/.gitkeep
+/.idea

@@ -1,0 +1,17 @@
+FROM node:18-alpine
+
+RUN apk add --no-cache git
+
+WORKDIR /app
+COPY ./package.json .
+
+RUN npm install
+
+COPY ./bot.js .
+COPY ./.env .
+
+
+VOLUME landings_list /app/landings_list
+
+
+# ENTRYPOINT ["node", "./bot.js"]

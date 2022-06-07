@@ -124,7 +124,7 @@ bot.onText(new RegExp(commands.ADD_LANDING), msg => {
                         if (!jsonFile.landings.includes(landUrl)) {
                             jsonFile.landings.push(landUrl)
                             fs.writeFileSync(landingsFile, JSON.stringify(jsonFile))
-                            bot.sendMessage(chatId, `Добавлено`, {
+                            bot.sendMessage(chatId, `Добавлено ${landUrl}`, {
                                 reply_markup: {
                                     keyboard: KEYBOARD_MARKUP
                                 }
@@ -183,11 +183,11 @@ bot.onText(new RegExp(commands.REMOVE_LANDING), msg => {
                         landUrl = message.text
 
                     if (jsonFile.landings.includes(landUrl)) {
-                        const filteredLandArray = jsonFile.landings.filter(value => value == landUrl)
+                        const filteredLandArray = jsonFile.landings.filter(value => value != landUrl)
                         jsonFile.landings = filteredLandArray
                         
                         fs.writeFileSync(landingsFile, JSON.stringify(jsonFile))
-                        bot.sendMessage(chatId, `Добавлено`, {
+                        bot.sendMessage(chatId, `Удалено ${landUrl}`, {
                             reply_markup: {
                                 keyboard: KEYBOARD_MARKUP
                             }

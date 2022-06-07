@@ -11,7 +11,4 @@ COPY ./bot.js .
 COPY ./.env .
 
 
-VOLUME landings_list /app/landings_list
-
-
-# ENTRYPOINT ["node", "./bot.js"]
+ENTRYPOINT ["node", "./bot.js"]

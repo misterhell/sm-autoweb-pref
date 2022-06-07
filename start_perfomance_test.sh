@@ -1,0 +1,1 @@
+docker run lighthouse-reporter:node-lighthouse

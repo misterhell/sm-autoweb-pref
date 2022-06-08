@@ -3,5 +3,7 @@ results.json
 tmp
 node_modules
 
+landings_list/landings_list.json
+
 !/**/.gitkeep
 /.idea

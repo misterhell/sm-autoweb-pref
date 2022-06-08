@@ -16,7 +16,7 @@ class Statistics {
     toString() {
         let icon = '✅'
 
-        if (this.mobileP < 90 || this.desktopP < 90) {
+        if (this.mobileP < 0.85 || this.desktopP < 0.85) {
             icon = '❌'
         }
 

@@ -12,6 +12,12 @@ First you need to copy .env file
 ```sh
 cp ./.env.example ./.env
 ```
+Fill .env with params
+
+```
+cp ./landings_list/landings_list.json.example ./landings_list/landings_list.json
+```
+
 
 Then run `install.sh` it will pull sub modules and build docker con
 

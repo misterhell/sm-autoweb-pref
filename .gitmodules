@@ -1,0 +1,3 @@
+[submodule "AutoWebPerf"]
+	path = AutoWebPerf
+	url = https://github.com/GoogleChromeLabs/AutoWebPerf.git

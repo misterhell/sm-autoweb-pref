@@ -1,1 +1,1 @@
-docker run lighthouse-reporter:node-lighthouse
+docker run -v $(pwd)/landings_list:/app/landings_list lighthouse-reporter:node-lighthouse

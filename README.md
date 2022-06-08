@@ -20,3 +20,5 @@ Then run `install.sh` it will pull sub modules and build docker con
 Then you can run `start_bot.sh` - it will start docker container with bot in daeamon mode
 
 `start_perfomance_test.sh` will run perfomance test by every landing from landings list
+
+Add start_perfomance_test.sh to cron jobs

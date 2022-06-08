@@ -7,6 +7,11 @@ const { StatisticsCompounder } = require('./src/statistics-compounder')
 const { TgNotifier } = require('./src/tg-notifier')
 const { TestsFiles } = require('./src/tests-files')
 
+// stop on ctrl+c
+process.on('SIGINT', () => {
+    process.exit()
+});
+
 const {
     PSI_APIKEY,
     TG_BOT_KEY,

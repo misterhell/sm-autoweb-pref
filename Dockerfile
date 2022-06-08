@@ -7,7 +7,7 @@ COPY . .
 RUN npm install
 
 RUN git submodule update --init --recursive
-RUN cd ./AutoWebPerf && npm install --package-lock-only
+RUN cd ./AutoWebPerf && npm install
 
 
 CMD ["node", "./index.js"]

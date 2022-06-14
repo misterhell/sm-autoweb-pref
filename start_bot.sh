@@ -1,1 +1,1 @@
-docker run --rm -d -v $(pwd)/landings_list:/app/landings_list smartmoney-bot:node-bot
+docker run --rm --restart always -d -v $(pwd)/landings_list:/app/landings_list smartmoney-bot:node-bot

@@ -57,6 +57,7 @@ let cmds = `
 const executionCallback = (error, stdout, stderr) => {
     if (error) {
         tgNotifier.sendMessage(`stderr: ${error.message}`);
+        exec(cmds, executionCallback)
         return;
     }
     if (stderr) {
